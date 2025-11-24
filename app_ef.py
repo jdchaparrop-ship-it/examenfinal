@@ -155,9 +155,9 @@ Responde de forma concisa y clara en español.
 # =======================
 
 st.set_page_config(page_title="Chat PDF con MongoDB + Gemini + Cohere: ", page_icon="💬")
-st.title("💬 Chat PDF con MongoDB + Gemini + Cohere: "+USER)
+st.title("💬 Chat PDF con MongoDB + Gemini + Cohere + Profe pongame 20 jejeje: "+USER)
 
-archivo_pdf = st.file_uploader("📤 Sube un PDF", type=["pdf"])
+archivo_pdf = st.file_uploader("📤 Sube un PDF menos libros raros", type=["pdf"])
 
 if archivo_pdf:
     if st.button("Procesar y guardar PDF"):
@@ -165,7 +165,7 @@ if archivo_pdf:
             cantidad = procesar_pdf(archivo_pdf, archivo_pdf.name)
             st.success(f"Procesado: {cantidad} fragmentos generados y PDF guardado.")
 
-st.subheader("💬 Pregunta sobre el contenido del PDF")
+st.subheader("💬 Pregunta sobre el contenido del PDF pero que no sea tan difícil pues :o")
 
 if "historial" not in st.session_state:
     st.session_state.historial = []
@@ -191,4 +191,5 @@ for msg in st.session_state.historial:
         st.chat_message("user").write(msg["texto"])
     else:
         st.chat_message("assistant").write(msg["texto"])
+
 
