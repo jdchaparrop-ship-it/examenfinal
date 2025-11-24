@@ -10,9 +10,9 @@ import time
 # CONFIGURACIÓN
 # =======================
 
-GOOGLE_API_KEY = AIzaSyAnAoyjkWfmCA6SrROZnVNuaGAi1WDwGgg #"AIzaSyDPPtTRxxW0761kzPHoREiuv8i0keoc4lY"
-MONGODB_URI = mongodb+srv://jdchaparrop_db_user:<db_password>@clusterjdcp.d3ex3tc.mongodb.net/ #"mongodb+srv://jctovarg_db_user:UP2025@pccluster.sh0ibym.mongodb.net/"
-COHERE_API_KEY = jmArpV5KABXwcz7u86HXsdhECHguZ1QzxDk0FSq5 #"cqEqbrHoqtyrgxCEPiJoEdB9dECChdDKg9RHerCA"
+GOOGLE_API_KEY = "AIzaSyAnAoyjkWfmCA6SrROZnVNuaGAi1WDwGgg" #"AIzaSyDPPtTRxxW0761kzPHoREiuv8i0keoc4lY"
+MONGODB_URI = "mongodb+srv://jdchaparrop_db_user:<db_password>@clusterjdcp.d3ex3tc.mongodb.net/" #"mongodb+srv://jctovarg_db_user:UP2025@pccluster.sh0ibym.mongodb.net/"
+COHERE_API_KEY = "jmArpV5KABXwcz7u86HXsdhECHguZ1QzxDk0FSq5" #"cqEqbrHoqtyrgxCEPiJoEdB9dECChdDKg9RHerCA"
 
 USER = "Javier David Chaparro Panduro" #"Juan Carlos Tovar Galarreta"
 
@@ -191,5 +191,6 @@ for msg in st.session_state.historial:
         st.chat_message("user").write(msg["texto"])
     else:
         st.chat_message("assistant").write(msg["texto"])
+
 
 
